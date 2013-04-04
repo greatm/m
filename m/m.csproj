@@ -196,7 +196,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MasterClientController.cs" />
     <Compile Include="Controllers\MasterController.cs" />
+    <Compile Include="Controllers\MasterDesignationController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -206,10 +208,15 @@
     <Compile Include="Migrations\201304040300069_initial.Designer.cs">
       <DependentUpon>201304040300069_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304041027281_mig_designation.cs" />
+    <Compile Include="Migrations\201304041027281_mig_designation.Designer.cs">
+      <DependentUpon>201304041027281_mig_designation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Designation.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\mDBContext.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -340,6 +347,16 @@
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Error\ServerError.cshtml" />
     <Content Include="Views\Reports\Index.cshtml" />
+    <Content Include="Views\MasterClient\Index.cshtml" />
+    <Content Include="Views\MasterClient\Details.cshtml" />
+    <Content Include="Views\MasterClient\Create.cshtml" />
+    <Content Include="Views\MasterClient\Edit.cshtml" />
+    <Content Include="Views\MasterClient\Delete.cshtml" />
+    <Content Include="Views\MasterDesignation\Index.cshtml" />
+    <Content Include="Views\MasterDesignation\Details.cshtml" />
+    <Content Include="Views\MasterDesignation\Create.cshtml" />
+    <Content Include="Views\MasterDesignation\Edit.cshtml" />
+    <Content Include="Views\MasterDesignation\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -350,6 +367,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201304040300069_initial.resx">
       <DependentUpon>201304040300069_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304041027281_mig_designation.resx">
+      <DependentUpon>201304041027281_mig_designation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
