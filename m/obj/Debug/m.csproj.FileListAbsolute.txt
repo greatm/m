@@ -84,4 +84,9 @@ F:\work\m\m\obj\Debug\m.dll
 F:\work\m\m\obj\Debug\m.pdb
 F:\work\m\m\obj\Debug\m.Migrations.initial.resources
 F:\work\m\m\obj\Debug\m.csproj.GenerateResource.Cache
+F:\work\m\m\bin\Syncfusion.Core.dll
+F:\work\m\m\bin\Syncfusion.Shared.Mvc.dll
+F:\work\m\m\bin\Syncfusion.Shared.Mvc.xml
 F:\work\m\m\obj\Debug\m.csprojResolveAssemblyReference.cache
+F:\work\m\m\bin\Syncfusion.ReportViewer.Mvc.dll
+F:\work\m\m\bin\Syncfusion.ReportViewer.Mvc.xml

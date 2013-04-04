@@ -85,3 +85,8 @@ F:\work\m\m\obj\Release\m.dll
 F:\work\m\m\obj\Release\m.pdb
 F:\work\m\m\obj\Release\m.Migrations.initial.resources
 F:\work\m\m\obj\Release\m.csproj.GenerateResource.Cache
+F:\work\m\m\bin\Syncfusion.Core.dll
+F:\work\m\m\bin\Syncfusion.Shared.Mvc.dll
+F:\work\m\m\bin\Syncfusion.Shared.Mvc.xml
+F:\work\m\m\bin\Syncfusion.ReportViewer.Mvc.dll
+F:\work\m\m\bin\Syncfusion.ReportViewer.Mvc.xml

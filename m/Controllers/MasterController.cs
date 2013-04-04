@@ -6,7 +6,8 @@ using System.Web.Mvc;
 
 namespace m.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize]
+    //[Authorize(Roles = "Administrator")]
     public class MasterController : Controller
     {
         //
