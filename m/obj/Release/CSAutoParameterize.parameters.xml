@@ -3,4 +3,10 @@
   <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-m-20130403085154;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-m-20130403085154.mdf" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="F:\\work\\m\\m\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
+  <parameter name="mDBContext-Web.config Connection String" description="mDBContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\dbm.mdf;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\work\\m\\m\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='mDBContext']/@connectionString" />
+  </parameter>
+  <parameter name="mDBContext_DatabasePublish-Web.config Connection String" description="mDBContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="mDBContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\work\\m\\m\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='mDBContext_DatabasePublish']/@connectionString" />
+  </parameter>
 </parameters>

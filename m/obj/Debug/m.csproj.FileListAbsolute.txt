@@ -82,3 +82,6 @@ F:\work\m\m\bin\zh-Hans\System.Spatial.resources.dll
 F:\work\m\m\bin\zh-Hant\System.Spatial.resources.dll
 F:\work\m\m\obj\Debug\m.dll
 F:\work\m\m\obj\Debug\m.pdb
+F:\work\m\m\obj\Debug\m.Migrations.initial.resources
+F:\work\m\m\obj\Debug\m.csproj.GenerateResource.Cache
+F:\work\m\m\obj\Debug\m.csprojResolveAssemblyReference.cache

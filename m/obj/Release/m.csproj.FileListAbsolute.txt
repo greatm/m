@@ -83,3 +83,5 @@ F:\work\m\m\bin\zh-Hant\System.Spatial.resources.dll
 F:\work\m\m\obj\Release\m.csprojResolveAssemblyReference.cache
 F:\work\m\m\obj\Release\m.dll
 F:\work\m\m\obj\Release\m.pdb
+F:\work\m\m\obj\Release\m.Migrations.initial.resources
+F:\work\m\m\obj\Release\m.csproj.GenerateResource.Cache
