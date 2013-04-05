@@ -16,9 +16,18 @@ namespace m.Controllers
         //
         // GET: /MasterDesignation/
 
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.Designations.ToList());
+            //var desigs = from m in db.Designations select m;
+            var desigs = db.Designations.ToList();
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                desigs = desigs.Where(s => s.Name.Contains(searchString)).ToList();
+            }
+
+            return View(desigs);
+            //return View(db.Designations.ToList());
         }
 
         //

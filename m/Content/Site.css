@@ -50,10 +50,6 @@ mark {
     float: right;
 }
 
-.editor-label {
-    color:green ;
-}
-
 .clear-fix:after {
     content: ".";
     clear: both;
@@ -204,7 +200,7 @@ ul#menu {
         }
 
             ul#menu li a:hover {
-                color: #333;
+                color:goldenrod;
                 text-decoration: none;
             }
 
@@ -759,3 +755,6 @@ tr.pager td {
         }
 }
 
+.editor-label {
+    color:green ;
+}
