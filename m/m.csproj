@@ -200,6 +200,7 @@
     <Compile Include="Controllers\MasterController.cs" />
     <Compile Include="Controllers\MasterDesignationController.cs" />
     <Compile Include="Controllers\MasterProjectController.cs" />
+    <Compile Include="Controllers\MasterUsersController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -365,6 +366,7 @@
     <Content Include="Views\MasterProject\Edit.cshtml" />
     <Content Include="Views\MasterProject\Delete.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
+    <Content Include="Views\MasterUsers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
