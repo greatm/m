@@ -15,6 +15,9 @@ namespace m.Controllers
         {
             return View();
         }
-
+        public ActionResult BookTicket()
+        {
+            return View();
+        }
     }
 }

@@ -203,6 +203,7 @@
     <Compile Include="Controllers\MasterUsersController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Controllers\TravelController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -367,6 +368,7 @@
     <Content Include="Views\MasterProject\Delete.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
     <Content Include="Views\MasterUsers\Index.cshtml" />
+    <Content Include="Views\Travel\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
