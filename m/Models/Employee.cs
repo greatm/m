@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace m.Models
 {
@@ -14,10 +15,13 @@ namespace m.Models
         public Designation Designation { get; set; }
         public string Father { get; set; }
         public string Mother { get; set; }
+
+        [DataType(DataType.Date)]
         public DateTime DoB { get; set; }
         public string sex { get; set; }
         public string marrital_status { get; set; }
-        public DateTime DoJ { get; set; }
+
+        public virtual DateTime DoJ { get; set; }
         public DateTime DoJA { get; set; }
         public DateTime DoI { get; set; }
         public DateTime DoSalary { get; set; }
