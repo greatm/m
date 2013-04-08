@@ -217,14 +217,20 @@
     <Compile Include="Migrations\201304041027281_mig_designation.Designer.cs">
       <DependentUpon>201304041027281_mig_designation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304080538002_mig_project_manager.cs" />
+    <Compile Include="Migrations\201304080538002_mig_project_manager.Designer.cs">
+      <DependentUpon>201304080538002_mig_project_manager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
+    <Compile Include="Models\Claim.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Designation.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\mDBContext.cs" />
     <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -386,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304041027281_mig_designation.resx">
       <DependentUpon>201304041027281_mig_designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304080538002_mig_project_manager.resx">
+      <DependentUpon>201304080538002_mig_project_manager.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

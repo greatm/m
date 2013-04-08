@@ -90,6 +90,7 @@ namespace m.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Mobile { get; set; }
+        public Designation Designation { get; set; }
     }
 
     public class ExternalLogin

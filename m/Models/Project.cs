@@ -9,5 +9,6 @@ namespace m.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public Employee ProjectManager { get; set; }
     }
 }

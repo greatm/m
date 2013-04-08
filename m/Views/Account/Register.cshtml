@@ -30,8 +30,21 @@
                 @Html.PasswordFor(m => m.ConfirmPassword)
             </li>
             <li>
+                @Html.LabelFor(m => m.FirstName)
+                @Html.TextBoxFor(m => m.FirstName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.LastName)
+                @Html.TextBoxFor(m => m.LastName)
+            </li>
+            <li>
                 @Html.LabelFor(m => m.Mobile)
-                @Html.PasswordFor(m => m.Mobile)
+                @Html.TextBoxFor(m => m.Mobile)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Designation)
+                @Html.DropDownList("Designations", String.Empty)
+                @*@Html.ValidationMessageFor(model => model.GenreId)*@
             </li>
         </ol>
         <input type="submit" value="Register" />
