@@ -221,6 +221,10 @@
     <Compile Include="Migrations\201304080538002_mig_project_manager.Designer.cs">
       <DependentUpon>201304080538002_mig_project_manager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304080742476_mig_employee.cs" />
+    <Compile Include="Migrations\201304080742476_mig_employee.Designer.cs">
+      <DependentUpon>201304080742476_mig_employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -395,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304080538002_mig_project_manager.resx">
       <DependentUpon>201304080538002_mig_project_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304080742476_mig_employee.resx">
+      <DependentUpon>201304080742476_mig_employee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

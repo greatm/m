@@ -9,14 +9,13 @@ namespace m.Controllers
 {
     public class MasterUsersController : Controller
     {
-        private UsersContext db = new UsersContext();
-        //
-        // GET: /MasterUsers/
+        private mDBContext db = new mDBContext();
+        //private UsersContext db = new UsersContext();
 
         public ActionResult Index()
         {
-            return View(db.UserProfiles.ToList());
-            //return View();
+            return View(db.Employees.ToList());
+            //return View(db.UserProfiles.ToList());
         }
 
     }

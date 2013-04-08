@@ -1,12 +1,13 @@
 ﻿@model m.Models.Project
 
 @{
-    ViewBag.Title = "Master Project Create";
+    ViewBag.Title = "Master Project - Create";
 }
 
-<h2>Master Project Create</h2>
+<h2>Master Project - Create</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
@@ -21,7 +22,7 @@
             @Html.ValidationMessageFor(model => model.Name)
         </div>
         <div class="editor-label">
-            @Html.LabelFor(model => model.ProjectManager )
+            @Html.LabelFor(model => model.ProjectManager)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.ProjectManager)
