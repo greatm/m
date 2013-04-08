@@ -25,7 +25,6 @@ namespace m.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
-        public string Mobile { get; set; }
     }
 
     public class RegisterExternalLoginModel
@@ -88,6 +87,8 @@ namespace m.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Mobile { get; set; }
     }
 
