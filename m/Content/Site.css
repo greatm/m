@@ -136,12 +136,20 @@ footer {
 }
 
     .site-title a, .site-title a:hover, .site-title a:active {
-        background: none;
+        /*background: none;*/
         color: #c8c8c8;
         outline: none;
         text-decoration: none;
+        text-indent: 0;
     }
 
+a.site-logo {
+    background: url(../Images/imacs.jpg) no-repeat top left;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-indent: -9999px; /* hides the link text */
+}
 
 /* login
 ----------------------------------------------------------*/
@@ -200,7 +208,7 @@ ul#menu {
         }
 
             ul#menu li a:hover {
-                color:goldenrod;
+                color: goldenrod;
                 text-decoration: none;
             }
 
@@ -756,9 +764,9 @@ tr.pager td {
 }
 
 .editor-label {
-    color:green ;
+    color: green;
 }
 
 .display-label {
-    color:green ;
+    color: green;
 }

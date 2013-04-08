@@ -25,11 +25,11 @@ namespace m.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Employee  emp)
+        public ActionResult Create(Employee emp)
         {
             if (ModelState.IsValid)
             {
-                db.Employees .Add(emp);
+                db.Employees.Add(emp);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
