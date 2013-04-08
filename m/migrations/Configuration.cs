@@ -4,15 +4,21 @@ namespace m.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using m.Models;
+    using WebMatrix.WebData;
+    using System.Data.Entity.Infrastructure;
+    using System.Threading;
+    using System.Web.Mvc;
 
     internal sealed class Configuration : DbMigrationsConfiguration<m.Models.mDBContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            //AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true ;
         }
 
-        protected override void Seed(m.Models.mDBContext context)
+        protected override void Seed(mDBContext context)
         {
 
             //  This method will be called after migrating to the latest version.
