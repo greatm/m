@@ -18,5 +18,23 @@ namespace m.Controllers
             //return View(db.UserProfiles.ToList());
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Employee  emp)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Employees .Add(emp);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(emp);
+        }
     }
 }
