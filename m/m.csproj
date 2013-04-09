@@ -232,6 +232,14 @@
     <Compile Include="Migrations\201304081407175_mig_employee_date_nullable.Designer.cs">
       <DependentUpon>201304081407175_mig_employee_date_nullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304090820386_mig_project_manager_add.cs" />
+    <Compile Include="Migrations\201304090820386_mig_project_manager_add.Designer.cs">
+      <DependentUpon>201304090820386_mig_project_manager_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304090843360_project_pmid_nullable.cs" />
+    <Compile Include="Migrations\201304090843360_project_pmid_nullable.Designer.cs">
+      <DependentUpon>201304090843360_project_pmid_nullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -417,6 +425,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304081407175_mig_employee_date_nullable.resx">
       <DependentUpon>201304081407175_mig_employee_date_nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304090820386_mig_project_manager_add.resx">
+      <DependentUpon>201304090820386_mig_project_manager_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304090843360_project_pmid_nullable.resx">
+      <DependentUpon>201304090843360_project_pmid_nullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

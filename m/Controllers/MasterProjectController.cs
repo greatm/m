@@ -39,6 +39,7 @@ namespace m.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.ProjectManagers = new SelectList(db.Employees, "ID", "FirstName");
             return View();
         }
 
@@ -56,6 +57,7 @@ namespace m.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.ProjectManagers = new SelectList(db.Employees, "ID", "FirstName");
             return View(project);
         }
 
