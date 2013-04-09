@@ -21,11 +21,11 @@ namespace m.Models
         public string sex { get; set; }
         public string marrital_status { get; set; }
 
-        public virtual DateTime DoJ { get; set; }
-        public DateTime DoJA { get; set; }
-        public DateTime DoI { get; set; }
-        public DateTime DoSalary { get; set; }
-        public DateTime DoL { get; set; }
+        public Nullable<DateTime> DoJ { get; set; }
+        public Nullable<DateTime> DoJA { get; set; }
+        public Nullable<DateTime> DoI { get; set; }
+        public Nullable<DateTime> DoSalary { get; set; }
+        public Nullable<DateTime> DoL { get; set; }
         public string reason_leave { get; set; }
         public string category { get; set; }
         public string division { get; set; }

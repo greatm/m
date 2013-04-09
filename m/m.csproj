@@ -228,6 +228,10 @@
     <Compile Include="Migrations\201304080742476_mig_employee.Designer.cs">
       <DependentUpon>201304080742476_mig_employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304081407175_mig_employee_date_nullable.cs" />
+    <Compile Include="Migrations\201304081407175_mig_employee_date_nullable.Designer.cs">
+      <DependentUpon>201304081407175_mig_employee_date_nullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -388,6 +392,9 @@
     <Content Include="Views\Travel\BookTicket.cshtml" />
     <Content Include="Views\Allotment\Index.cshtml" />
     <Content Include="Views\MasterUsers\Create.cshtml" />
+    <Content Include="Views\MasterUsers\Details.cshtml" />
+    <Content Include="Views\MasterUsers\Edit.cshtml" />
+    <Content Include="Views\MasterUsers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -407,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304080742476_mig_employee.resx">
       <DependentUpon>201304080742476_mig_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304081407175_mig_employee_date_nullable.resx">
+      <DependentUpon>201304081407175_mig_employee_date_nullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
