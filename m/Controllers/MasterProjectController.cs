@@ -11,6 +11,7 @@ namespace m.Controllers
 {
     public class MasterProjectController : Controller
     {
+        #region action
         private mDBContext db = new mDBContext();
 
         //
@@ -39,7 +40,8 @@ namespace m.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.ProjectManagers = new SelectList(db.Employees, "ID", "FirstName");
+            //ViewBag.ProjectManagers = new SelectList(db.Employees, "ID", "FirstName");
+            CreateProjectManagersList();
             return View();
         }
 
@@ -57,9 +59,11 @@ namespace m.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ProjectManagers = new SelectList(db.Employees, "ID", "FirstName");
+            CreateProjectManagersList();
+            //ViewBag.ProjectManagers = new SelectList(db.Employees, "ID", "FirstName");
             return View(project);
         }
+
 
         //
         // GET: /MasterProject/Edit/5
@@ -121,5 +125,22 @@ namespace m.Controllers
             db.Dispose();
             base.Dispose(disposing);
         }
+        #endregion
+
+        #region function
+        private void CreateProjectManagersList()
+        {
+            var employees = db.Employees;
+            List<object> newList = new List<object>();
+            foreach (var employee in employees)
+                newList.Add(new
+                {
+                    Id = employee.ID,
+                    Name = employee.FirstName + " " + employee.LastName
+                });
+            this.ViewData["ProjectManagers"] = new SelectList(newList, "Id", "Name");
+
+        }
+        #endregion
     }
 }

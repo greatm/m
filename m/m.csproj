@@ -240,6 +240,10 @@
     <Compile Include="Migrations\201304090843360_project_pmid_nullable.Designer.cs">
       <DependentUpon>201304090843360_project_pmid_nullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304091214099_employee_user.cs" />
+    <Compile Include="Migrations\201304091214099_employee_user.Designer.cs">
+      <DependentUpon>201304091214099_employee_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -431,6 +435,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304090843360_project_pmid_nullable.resx">
       <DependentUpon>201304090843360_project_pmid_nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304091214099_employee_user.resx">
+      <DependentUpon>201304091214099_employee_user.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
