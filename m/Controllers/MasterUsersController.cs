@@ -32,7 +32,7 @@ namespace m.Controllers
             {
                 WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile });
                 WebSecurity.Login(model.UserName, model.Password);
-                
+
                 //db.Employees.Add(emp);
                 //db.SaveChanges();
                 return RedirectToAction("Index");

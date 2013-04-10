@@ -24,6 +24,7 @@ namespace m
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+            if (!WebSecurity.Initialized) WebSecurity.InitializeDatabaseConnection("mDBContext", "Employees", "ID", "UserName", autoCreateTables: true);
         }
     }
 }
