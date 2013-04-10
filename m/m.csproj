@@ -244,6 +244,10 @@
     <Compile Include="Migrations\201304091214099_employee_user.Designer.cs">
       <DependentUpon>201304091214099_employee_user.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304100727494_pending.cs" />
+    <Compile Include="Migrations\201304100727494_pending.Designer.cs">
+      <DependentUpon>201304100727494_pending.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -403,10 +407,10 @@
     <Content Include="Views\Travel\Index.cshtml" />
     <Content Include="Views\Travel\BookTicket.cshtml" />
     <Content Include="Views\Allotment\Index.cshtml" />
-    <Content Include="Views\MasterUsers\Create.cshtml" />
     <Content Include="Views\MasterUsers\Details.cshtml" />
     <Content Include="Views\MasterUsers\Edit.cshtml" />
     <Content Include="Views\MasterUsers\Delete.cshtml" />
+    <Content Include="Views\MasterUsers\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -438,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304091214099_employee_user.resx">
       <DependentUpon>201304091214099_employee_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304100727494_pending.resx">
+      <DependentUpon>201304100727494_pending.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

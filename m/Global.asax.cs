@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using WebMatrix.WebData;
 
 namespace m
 {
@@ -23,6 +24,8 @@ namespace m
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            //WebSecurity.InitializeDatabaseConnection("mDBContext", "Employees", "ID", "UserName", autoCreateTables: true);
         }
     }
 }
