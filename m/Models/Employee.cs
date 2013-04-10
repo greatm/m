@@ -17,6 +17,8 @@ namespace m.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Mobile { get; set; }
+        public string eMail { get; set; }
+        public int? DesignationID { get; set; }
         public Designation Designation { get; set; }
         public string Father { get; set; }
         public string Mother { get; set; }

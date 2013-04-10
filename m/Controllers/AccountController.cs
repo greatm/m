@@ -80,7 +80,7 @@ namespace m.Controllers
                 try
                 {
                     //WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile });
+                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile, DoB = model.DoB });
                     WebSecurity.Login(model.UserName, model.Password);
                     return RedirectToAction("Index", "Home");
                 }
