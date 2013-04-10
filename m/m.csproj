@@ -255,6 +255,10 @@
     <Compile Include="Migrations\201304100727494_pending.Designer.cs">
       <DependentUpon>201304100727494_pending.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304101041198_blank.cs" />
+    <Compile Include="Migrations\201304101041198_blank.Designer.cs">
+      <DependentUpon>201304101041198_blank.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -452,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304100727494_pending.resx">
       <DependentUpon>201304100727494_pending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304101041198_blank.resx">
+      <DependentUpon>201304101041198_blank.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
