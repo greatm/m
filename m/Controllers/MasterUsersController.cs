@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using m.Models;
 using System.Data;
+using WebMatrix.WebData;
 
 namespace m.Controllers
 {
@@ -25,16 +26,19 @@ namespace m.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Employee emp)
+        public ActionResult Create(RegisterModel model)
         {
             if (ModelState.IsValid)
             {
-                db.Employees.Add(emp);
-                db.SaveChanges();
+                WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile });
+                WebSecurity.Login(model.UserName, model.Password);
+                
+                //db.Employees.Add(emp);
+                //db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(emp);
+            return View(model);
         }
 
         public ActionResult Details(int id = 0)
