@@ -16,7 +16,8 @@ namespace m.Models
         public int EmployeeID { get; set; }
         public Employee employee { get; set; }
 
-        public int num_allowed { get; set; }
+        public int num_allowed_max { get; set; }
+        public int num_allowed_year { get; set; }
         public int num_taken { get; set; }
     }
 }
