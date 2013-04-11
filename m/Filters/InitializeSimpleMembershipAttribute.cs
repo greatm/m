@@ -40,7 +40,7 @@ namespace m.Filters
 
                     //WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
 
-                    if (!WebSecurity.Initialized) WebSecurity.InitializeDatabaseConnection("mDBContext", "Employees", "ID", "UserName", autoCreateTables: false );
+                    if (!WebSecurity.Initialized) WebSecurity.InitializeDatabaseConnection("mDBContext", "Employees", "ID", "UserName", autoCreateTables: true);
                 }
                 catch (Exception ex)
                 {
