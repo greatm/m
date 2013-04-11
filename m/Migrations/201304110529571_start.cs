@@ -2,7 +2,7 @@ namespace m.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class start : DbMigration
     {
         public override void Up()
@@ -15,7 +15,7 @@ namespace m.Migrations
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.Projects",
                 c => new
@@ -27,7 +27,7 @@ namespace m.Migrations
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Employees", t => t.ProjectManagerID)
                 .Index(t => t.ProjectManagerID);
-            
+
             CreateTable(
                 "dbo.Employees",
                 c => new
@@ -72,7 +72,7 @@ namespace m.Migrations
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Designations", t => t.DesignationID)
                 .Index(t => t.DesignationID);
-            
+
             CreateTable(
                 "dbo.Designations",
                 c => new
@@ -81,9 +81,9 @@ namespace m.Migrations
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
-            
+
         }
-        
+
         public override void Down()
         {
             DropIndex("dbo.Employees", new[] { "DesignationID" });
