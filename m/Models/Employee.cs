@@ -44,9 +44,9 @@ namespace m.Models
         public string pf_no_dept { get; set; }
         public string esi_no { get; set; }
         public string esi_dispensary { get; set; }
-        public bool restrict_pf_contri { get; set; }
-        public bool zero_pension { get; set; }
-        public bool zero_pt { get; set; }
+        public bool? restrict_pf_contri { get; set; }
+        public bool? zero_pension { get; set; }
+        public bool? zero_pt { get; set; }
         public string PAN { get; set; }
         public string Ward { get; set; }
         public string AddressPresent { get; set; }

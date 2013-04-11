@@ -62,17 +62,17 @@ namespace m.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Employee album)
+        public ActionResult Edit(Employee emp)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(album).State = EntityState.Modified;
+                db.Entry(emp).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
             //ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", album.GenreId);
             //ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", album.ArtistId);
-            return View(album);
+            return View(emp);
         }
 
         public ActionResult Delete(int id = 0)
