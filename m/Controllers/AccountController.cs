@@ -79,9 +79,16 @@ namespace m.Controllers
                 // Attempt to register the user
                 try
                 {
-                    //WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
-                    //WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile, DoB = model.DoB });
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile, eMail = model.eMail });
+                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new
+                    {
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        Mobile = model.Mobile,
+                        eMail = model.eMail,
+                        DesignationID = model.DesignationID,
+                        Father = model.Father,
+                        Mother = model.Mother
+                    });
                     WebSecurity.Login(model.UserName, model.Password);
                     return RedirectToAction("Index", "Home");
                 }

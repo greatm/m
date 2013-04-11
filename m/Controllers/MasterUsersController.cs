@@ -31,7 +31,16 @@ namespace m.Controllers
         {
             if (ModelState.IsValid)
             {
-                WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new { FirstName = model.FirstName, LastName = model.LastName, Mobile = model.Mobile, eMail = model.eMail });
+                WebSecurity.CreateUserAndAccount(model.UserName, model.Password, new
+                {
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Mobile = model.Mobile,
+                    eMail = model.eMail,
+                    DesignationID = model.DesignationID,
+                    Father = model.Father,
+                    Mother = model.Mother
+                });
                 WebSecurity.Login(model.UserName, model.Password);
                 return RedirectToAction("Index");
             }
@@ -62,19 +71,26 @@ namespace m.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Employee emp)
+        //public ActionResult Edit(Employee emp)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Entry(emp).State = EntityState.Modified;
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(emp);
+        //}
+        public ActionResult Edit(RegisterModel model)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(emp).State = EntityState.Modified;
+                db.Entry(model).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            //ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", album.GenreId);
-            //ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", album.ArtistId);
-            return View(emp);
+            return View(model);
         }
-
         public ActionResult Delete(int id = 0)
         {
             Employee employee = db.Employees.Find(id);

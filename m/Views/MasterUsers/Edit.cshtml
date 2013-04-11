@@ -1,10 +1,10 @@
-﻿@model m.Models.Employee
+﻿@model m.Models.RegisterModel
 
 @{
-    ViewBag.Title = "Master Employee Edit";
+    ViewBag.Title = "Master User Edit";
 }
 
-<h2>Master Employee Edit</h2>
+<h2>Master User Edit</h2>
 
 @using (Html.BeginForm())
 {
@@ -12,9 +12,31 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Employee</legend>
+        <legend>RegisterModel</legend>
 
-        @Html.HiddenFor(model => model.ID)
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ConfirmPassword)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ConfirmPassword)
+            @Html.ValidationMessageFor(model => model.ConfirmPassword)
+        </div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.FirstName)
@@ -38,6 +60,22 @@
         <div class="editor-field">
             @Html.EditorFor(model => model.Mobile)
             @Html.ValidationMessageFor(model => model.Mobile)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.eMail)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.eMail)
+            @Html.ValidationMessageFor(model => model.eMail)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DesignationID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DesignationID)
+            @Html.ValidationMessageFor(model => model.DesignationID)
         </div>
 
         <div class="editor-label">
@@ -270,6 +308,15 @@
         <div class="editor-field">
             @Html.EditorFor(model => model.Remarks)
             @Html.ValidationMessageFor(model => model.Remarks)
+        </div>
+
+
+        <div class="editor-label">
+            Roles
+        </div>
+        <div class="editor-field">
+            @* @Html.DropDownListFor< @Roles ,string > *@
+            @*@Html.ValidationMessageFor(model => model.ProjectManagerID)*@
         </div>
 
         <p>

@@ -234,6 +234,14 @@
     <Compile Include="Migrations\201304110917060_ConveyanceMode.Designer.cs">
       <DependentUpon>201304110917060_ConveyanceMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304111141172_employee_long.cs" />
+    <Compile Include="Migrations\201304111141172_employee_long.Designer.cs">
+      <DependentUpon>201304111141172_employee_long.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304111247432_roles.cs" />
+    <Compile Include="Migrations\201304111247432_roles.Designer.cs">
+      <DependentUpon>201304111247432_roles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -387,7 +395,6 @@
     <Content Include="Views\MasterDesignation\Edit.cshtml" />
     <Content Include="Views\MasterDesignation\Delete.cshtml" />
     <Content Include="Views\MasterProject\Index.cshtml" />
-    <Content Include="Views\MasterProject\Details.cshtml" />
     <Content Include="Views\MasterProject\Create.cshtml" />
     <Content Include="Views\MasterProject\Edit.cshtml" />
     <Content Include="Views\MasterProject\Delete.cshtml" />
@@ -397,13 +404,14 @@
     <Content Include="Views\Travel\BookTicket.cshtml" />
     <Content Include="Views\Allotment\Index.cshtml" />
     <Content Include="Views\MasterUsers\Details.cshtml" />
-    <Content Include="Views\MasterUsers\Edit.cshtml" />
     <Content Include="Views\MasterUsers\Delete.cshtml" />
     <Content Include="Views\MasterUsers\Create.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\MasterPolicySL\Index.cshtml" />
     <Content Include="Views\MasterConveyanceMode\Index.cshtml" />
     <Content Include="Views\MasterGrade\Index.cshtml" />
+    <Content Include="Views\MasterProject\Details.cshtml" />
+    <Content Include="Views\MasterUsers\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -418,6 +426,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304110917060_ConveyanceMode.resx">
       <DependentUpon>201304110917060_ConveyanceMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304111141172_employee_long.resx">
+      <DependentUpon>201304111141172_employee_long.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304111247432_roles.resx">
+      <DependentUpon>201304111247432_roles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
