@@ -2,7 +2,7 @@ namespace m.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class employee_short : DbMigration
     {
         public override void Up()
@@ -40,7 +40,7 @@ namespace m.Migrations
             DropColumn("dbo.Employees", "AddressPermanent");
             DropColumn("dbo.Employees", "Remarks");
         }
-        
+
         public override void Down()
         {
             AddColumn("dbo.Employees", "Remarks", c => c.String());

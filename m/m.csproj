@@ -211,6 +211,7 @@
     <Compile Include="Controllers\MasterController.cs" />
     <Compile Include="Controllers\MasterConveyanceModeController.cs" />
     <Compile Include="Controllers\MasterDesignationController.cs" />
+    <Compile Include="Controllers\MasterGradeController.cs" />
     <Compile Include="Controllers\MasterPolicySLController.cs" />
     <Compile Include="Controllers\MasterProjectController.cs" />
     <Compile Include="Controllers\MasterUsersController.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Models\ConveyanceMode.cs" />
     <Compile Include="Models\Designation.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Grade.cs" />
     <Compile Include="Models\Leave.cs" />
     <Compile Include="Models\mDBContext.cs" />
     <Compile Include="Models\Project.cs" />
@@ -309,6 +311,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="App_Data\Sample.rdl" />
     <None Include="Properties\PublishProfiles\m.esamadhan.net.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="favicon.ico" />
@@ -400,10 +403,9 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\MasterPolicySL\Index.cshtml" />
     <Content Include="Views\MasterConveyanceMode\Index.cshtml" />
+    <Content Include="Views\MasterGrade\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

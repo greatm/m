@@ -2,7 +2,7 @@ namespace m.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class ConveyanceMode : DbMigration
     {
         public override void Up()
@@ -15,9 +15,9 @@ namespace m.Migrations
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
-            
+
         }
-        
+
         public override void Down()
         {
             DropTable("dbo.ConveyanceModes");

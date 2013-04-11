@@ -12,7 +12,7 @@ namespace m.Models
         public DbSet<Project> Projects { get; set; }
         public DbSet<Designation> Designations { get; set; }
         public DbSet<Employee> Employees { get; set; }
-     
+
         public DbSet<ConveyanceMode> ConveyanceModes { get; set; }
     }
 }
