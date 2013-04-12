@@ -214,6 +214,7 @@
     <Compile Include="Controllers\MasterGradeController.cs" />
     <Compile Include="Controllers\MasterPolicySLController.cs" />
     <Compile Include="Controllers\MasterProjectController.cs" />
+    <Compile Include="Controllers\MasterRolesController.cs" />
     <Compile Include="Controllers\MasterUsersController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
@@ -425,8 +426,12 @@
     <Content Include="Views\MasterPolicySL\Index.cshtml" />
     <Content Include="Views\MasterGrade\Create.cshtml" />
     <Content Include="Views\MasterGrade\Index.cshtml" />
+    <Content Include="Views\MasterRoles\Create.cshtml" />
+    <Content Include="Views\MasterRoles\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

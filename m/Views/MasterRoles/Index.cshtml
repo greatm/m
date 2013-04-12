@@ -1,0 +1,45 @@
+﻿@*@model SimpleRoleProvider*@
+@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Master Roles";
+}
+
+<h2>Master Roles</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model)*@
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model)*@
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem)
+        </td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+     *@       </td>
+        </tr>
+    }
+
+</table>
