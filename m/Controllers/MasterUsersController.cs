@@ -21,6 +21,7 @@ namespace m.Controllers
         public ActionResult Create()
         {
             this.ViewData["Designations"] = new SelectList(db.Designations.ToList(), "ID", "Name");
+            this.ViewData["Grades"] = new SelectList(db.Grades.ToList(), "ID", "Name");
             return View();
         }
         [HttpPost]

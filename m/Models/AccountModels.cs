@@ -101,6 +101,8 @@ namespace m.Models
         public string sex { get; set; }
         public string marrital_status { get; set; }
 
+        public int? GradeID { get; set; }
+        public Grade grade { get; set; }
         public Nullable<DateTime> DoJ { get; set; }
         public Nullable<DateTime> DoJA { get; set; }
         public Nullable<DateTime> DoI { get; set; }
@@ -110,7 +112,6 @@ namespace m.Models
         public string category { get; set; }
         public string division { get; set; }
         public string department { get; set; }
-        public string grade { get; set; }
         public string Bank { get; set; }
         public string bank_account { get; set; }
         public string pf_no { get; set; }
@@ -140,6 +141,7 @@ namespace m.Models
             this.DoB = emp.DoB;
             this.sex = emp.sex;
             this.marrital_status = emp.marrital_status;
+            this.GradeID = emp.GradeID;
             this.DoJ = emp.DoJ;
             this.DoJA = emp.DoJA;
             this.DoI = emp.DoI;
@@ -149,7 +151,6 @@ namespace m.Models
             this.category = emp.category;
             this.division = emp.division;
             this.department = emp.department;
-            this.grade = emp.grade;
             this.Bank = emp.Bank;
             this.bank_account = emp.bank_account;
             this.pf_no = emp.pf_no;
