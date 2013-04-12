@@ -118,15 +118,15 @@
             @Html.ValidationMessageFor(model => model.marrital_status)
         </div>
 
-          <div class="editor-label">
-            @Html.LabelFor(model => model.grade )
+        <div class="editor-label">
+            @Html.LabelFor(model => model.grade)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.grade)
-            @Html.ValidationMessageFor(model => model.grade)
+            @Html.DropDownList("Grades", String.Empty)
+            @Html.ValidationMessageFor(model => model.GradeID)
         </div>
 
-      <div class="editor-label">
+        <div class="editor-label">
             @Html.LabelFor(model => model.DoJ)
         </div>
         <div class="editor-field">

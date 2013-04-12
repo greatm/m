@@ -39,7 +39,6 @@ namespace m.Models
         public string category { get; set; }
         public string division { get; set; }
         public string department { get; set; }
-        //public string grade { get; set; }
         public string Bank { get; set; }
         public string bank_account { get; set; }
         public string pf_no { get; set; }

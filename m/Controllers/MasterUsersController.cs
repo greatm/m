@@ -65,24 +65,11 @@ namespace m.Controllers
             {
                 return HttpNotFound();
             }
+            this.ViewData["Grades"] = new SelectList(db.Grades.ToList(), "ID", "Name");
             return View(new RegisterModel(employee));
-
-            //ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", employee.GenreId);
-            //ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", employee.ArtistId);
-            //return View(employee);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //public ActionResult Edit(Employee emp)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Entry(emp).State = EntityState.Modified;
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(emp);
-        //}
         public ActionResult Edit(RegisterModel model)
         {
             if (ModelState.IsValid)
@@ -91,6 +78,7 @@ namespace m.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            this.ViewData["Grades"] = new SelectList(db.Grades.ToList(), "ID", "Name");
             return View(model);
         }
         public ActionResult Delete(int id = 0)
