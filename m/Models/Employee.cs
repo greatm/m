@@ -53,7 +53,8 @@ namespace m.Models
         public string AddressPermanent { get; set; }
         public string Remarks { get; set; }
 
-             public   Employee      (RegisterModel model)
+        public Employee() { }
+        public Employee(RegisterModel model)
         {
             this.UserName = model.UserName;
 

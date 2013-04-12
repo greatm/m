@@ -128,7 +128,7 @@ namespace m.Models
 
         public RegisterModel(Employee emp)
         {
-            //this.UserName = emp.UserName;
+            this.UserName = emp.UserName;
 
             this.FirstName = emp.FirstName;
             this.LastName = emp.LastName;

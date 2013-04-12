@@ -279,6 +279,7 @@ namespace m.Controllers
                     if (user == null)
                     {
                         // Insert name into the profile table
+                        //db.Employees.Add(new Employee { UserName = model.UserName });
                         db.Employees.Add(new Employee { UserName = model.UserName });
                         db.SaveChanges();
 

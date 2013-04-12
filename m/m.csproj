@@ -246,6 +246,10 @@
     <Compile Include="Migrations\201304120448525_leave.Designer.cs">
       <DependentUpon>201304120448525_leave.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304120537047_grate.cs" />
+    <Compile Include="Migrations\201304120537047_grate.Designer.cs">
+      <DependentUpon>201304120537047_grate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -412,10 +416,11 @@
     <Content Include="Views\MasterUsers\Create.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\MasterConveyanceMode\Index.cshtml" />
-    <Content Include="Views\MasterGrade\Index.cshtml" />
     <Content Include="Views\MasterProject\Details.cshtml" />
     <Content Include="Views\MasterUsers\Edit.cshtml" />
     <Content Include="Views\MasterPolicySL\Index.cshtml" />
+    <Content Include="Views\MasterGrade\Create.cshtml" />
+    <Content Include="Views\MasterGrade\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -439,6 +444,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304120448525_leave.resx">
       <DependentUpon>201304120448525_leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304120537047_grate.resx">
+      <DependentUpon>201304120537047_grate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
