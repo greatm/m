@@ -12,12 +12,10 @@ namespace m.Controllers
     public class MasterUsersController : Controller
     {
         private mDBContext db = new mDBContext();
-        //private UsersContext db = new UsersContext();
 
         public ActionResult Index()
         {
             return View(db.Employees.ToList());
-            //return View(db.UserProfiles.ToList());
         }
 
         public ActionResult Create()
@@ -45,6 +43,7 @@ namespace m.Controllers
                 return RedirectToAction("Index");
             }
 
+            this.ViewData["Designations"] = new SelectList(db.Designations.ToList(), "ID", "Name");
             return View(model);
         }
 
@@ -65,9 +64,11 @@ namespace m.Controllers
             {
                 return HttpNotFound();
             }
+            return View(new RegisterModel(employee));
+
             //ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", employee.GenreId);
             //ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", employee.ArtistId);
-            return View(employee);
+            //return View(employee);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]

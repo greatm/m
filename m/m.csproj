@@ -242,6 +242,10 @@
     <Compile Include="Migrations\201304111247432_roles.Designer.cs">
       <DependentUpon>201304111247432_roles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304120448525_leave.cs" />
+    <Compile Include="Migrations\201304120448525_leave.Designer.cs">
+      <DependentUpon>201304120448525_leave.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Allotment.cs" />
@@ -407,11 +411,11 @@
     <Content Include="Views\MasterUsers\Delete.cshtml" />
     <Content Include="Views\MasterUsers\Create.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\MasterPolicySL\Index.cshtml" />
     <Content Include="Views\MasterConveyanceMode\Index.cshtml" />
     <Content Include="Views\MasterGrade\Index.cshtml" />
     <Content Include="Views\MasterProject\Details.cshtml" />
     <Content Include="Views\MasterUsers\Edit.cshtml" />
+    <Content Include="Views\MasterPolicySL\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -432,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304111247432_roles.resx">
       <DependentUpon>201304111247432_roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304120448525_leave.resx">
+      <DependentUpon>201304120448525_leave.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

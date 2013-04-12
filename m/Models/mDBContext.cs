@@ -14,5 +14,6 @@ namespace m.Models
         public DbSet<Employee> Employees { get; set; }
 
         public DbSet<ConveyanceMode> ConveyanceModes { get; set; }
+        public DbSet<Leave> Leaves { get; set; }
     }
 }

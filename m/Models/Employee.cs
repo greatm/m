@@ -52,5 +52,45 @@ namespace m.Models
         public string AddressPresent { get; set; }
         public string AddressPermanent { get; set; }
         public string Remarks { get; set; }
+
+             public   Employee      (RegisterModel model)
+        {
+            this.UserName = model.UserName;
+
+            this.FirstName = model.FirstName;
+            this.LastName = model.LastName;
+            this.Mobile = model.Mobile;
+            this.eMail = model.eMail;
+            this.DesignationID = model.DesignationID;
+            this.Father = model.Father;
+            this.Mother = model.Mother;
+            this.DoB = model.DoB;
+            this.sex = model.sex;
+            this.marrital_status = model.marrital_status;
+            this.DoJ = model.DoJ;
+            this.DoJA = model.DoJA;
+            this.DoI = model.DoI;
+            this.DoSalary = model.DoSalary;
+            this.DoL = model.DoL;
+            this.reason_leave = model.reason_leave;
+            this.category = model.category;
+            this.division = model.division;
+            this.department = model.department;
+            this.grade = model.grade;
+            this.Bank = model.Bank;
+            this.bank_account = model.bank_account;
+            this.pf_no = model.pf_no;
+            this.pf_no_dept = model.pf_no_dept;
+            this.esi_no = model.esi_no;
+            this.esi_dispensary = model.esi_dispensary;
+            this.restrict_pf_contri = model.restrict_pf_contri;
+            this.zero_pension = model.zero_pension;
+            this.zero_pt = model.zero_pt;
+            this.PAN = model.PAN;
+            this.Ward = model.Ward;
+            this.AddressPresent = model.AddressPresent;
+            this.AddressPermanent = model.AddressPermanent;
+            this.Remarks = model.Remarks;
+        }
     }
 }

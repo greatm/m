@@ -125,6 +125,46 @@ namespace m.Models
         public string AddressPresent { get; set; }
         public string AddressPermanent { get; set; }
         public string Remarks { get; set; }
+
+        public RegisterModel(Employee emp)
+        {
+            //this.UserName = emp.UserName;
+
+            this.FirstName = emp.FirstName;
+            this.LastName = emp.LastName;
+            this.Mobile = emp.Mobile;
+            this.eMail = emp.eMail;
+            this.DesignationID = emp.DesignationID;
+            this.Father = emp.Father;
+            this.Mother = emp.Mother;
+            this.DoB = emp.DoB;
+            this.sex = emp.sex;
+            this.marrital_status = emp.marrital_status;
+            this.DoJ = emp.DoJ;
+            this.DoJA = emp.DoJA;
+            this.DoI = emp.DoI;
+            this.DoSalary = emp.DoSalary;
+            this.DoL = emp.DoL;
+            this.reason_leave = emp.reason_leave;
+            this.category = emp.category;
+            this.division = emp.division;
+            this.department = emp.department;
+            this.grade = emp.grade;
+            this.Bank = emp.Bank;
+            this.bank_account = emp.bank_account;
+            this.pf_no = emp.pf_no;
+            this.pf_no_dept = emp.pf_no_dept;
+            this.esi_no = emp.esi_no;
+            this.esi_dispensary = emp.esi_dispensary;
+            this.restrict_pf_contri = emp.restrict_pf_contri;
+            this.zero_pension = emp.zero_pension;
+            this.zero_pt = emp.zero_pt;
+            this.PAN = emp.PAN;
+            this.Ward = emp.Ward;
+            this.AddressPresent = emp.AddressPresent;
+            this.AddressPermanent = emp.AddressPermanent;
+            this.Remarks = emp.Remarks;
+        }
     }
 
     public class ExternalLogin

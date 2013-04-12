@@ -13,12 +13,8 @@ namespace m.Controllers
     {
         private mDBContext db = new mDBContext();
 
-        //
-        // GET: /MasterDesignation/
-
         public ActionResult Index(string searchString)
         {
-            //var desigs = from m in db.Designations select m;
             var desigs = db.Designations.ToList();
 
             if (!String.IsNullOrEmpty(searchString))
@@ -27,7 +23,6 @@ namespace m.Controllers
             }
 
             return View(desigs);
-            //return View(db.Designations.ToList());
         }
 
         //
