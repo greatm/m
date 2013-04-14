@@ -13,7 +13,7 @@ namespace m.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(db.Grades.ToList());
         }
         public ActionResult Create()
         {
