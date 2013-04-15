@@ -20,11 +20,8 @@
         <th></th>
     </tr>
 
-    @
-    if (Model != null)
+    @foreach (var item in Model)
     {
-        foreach (var item in Model)
-        {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
@@ -38,7 +35,6 @@
             @Html.ActionLink("Delete", "Delete", new { id = item.ID })
             </td>
         </tr>
-        }
     }
 
 </table>

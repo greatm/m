@@ -33,5 +33,39 @@ namespace m.Controllers
             return View(grade);
         }
 
+        public ActionResult Details(int id = 0)
+        {
+            Grade grade = db.Grades.Find(id);
+            if (grade == null)
+            {
+                return HttpNotFound();
+            }
+            return View(grade);
+        }
+
+        public ActionResult Delete(int id = 0)
+        {
+            Grade grade = db.Grades.Find(id);
+            if (grade == null)
+            {
+                return HttpNotFound();
+            }
+            return View(grade);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Grade grade = db.Grades.Find(id);
+            db.Grades.Remove(grade);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
+        }
     }
 }

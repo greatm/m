@@ -38,7 +38,9 @@ namespace m.Controllers
                     eMail = model.eMail,
                     DesignationID = model.DesignationID,
                     Father = model.Father,
-                    Mother = model.Mother
+                    Mother = model.Mother,
+                    DoB = model.DoB
+
                 });
                 WebSecurity.Login(model.UserName, model.Password);
                 return RedirectToAction("Index");
