@@ -1,2 +1,4 @@
-﻿b\bin\*.*
-b\obj\*.*
+﻿.\m\bin\*.*
+.\m\obj\*.*
+.\m\app_data\*.*
+
