@@ -1,4 +1,12 @@
-﻿bin/
+﻿#b\bin\*.*
+#.\b\obj\*.*
+#./b/app_data/*.*
+
+bin/
 obj/
 app_data/
 
+
+#b/bin/
+#b/obj/
+#b/app_data/
