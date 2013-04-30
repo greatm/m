@@ -24,6 +24,17 @@ namespace m.Controllers
 
             return View(desigs);
         }
+        public ActionResult QuickSearch(string term)
+        {
+            var desigs = db.Designations.ToList();
+
+            if (!String.IsNullOrEmpty(term))
+            {
+                var desigs2 = desigs.Where(s => s.Name.Contains(term)).ToList().Select(t => new { value = t.Name });
+                return Json(desigs2, JsonRequestBehavior.AllowGet);
+            }
+            return Json(desigs, JsonRequestBehavior.AllowGet);
+        }
 
         //
         // GET: /MasterDesignation/Details/5

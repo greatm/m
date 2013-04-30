@@ -8,6 +8,7 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+    <input type="text" name="q" data-autocomplete-source="@Url.Action("QuickSearch", "MasterDesignation")" />
     @using (Html.BeginForm())
     {    
         <p>
@@ -39,3 +40,4 @@
     }
 
 </table>
+

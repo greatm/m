@@ -28,7 +28,7 @@ namespace m.Controllers
         ReportViewerModel GetModel()
         {
             ReportViewerModel reportModel = new ReportViewerModel();
-            reportModel.ReportPath = Server.MapPath("~/App_Data/Sample.rdl");
+            reportModel.ReportPath = Server.MapPath("~/App_Data/employee.rdl");
             return reportModel;
         }
     }
