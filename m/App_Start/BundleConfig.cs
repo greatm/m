@@ -21,7 +21,6 @@ namespace m
                 "~/Scripts/modernizr-*"
 
 
-
                 ));
 
             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
