@@ -8,11 +8,11 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
-    <input type="text" name="q" data-autocomplete-source="@Url.Action("QuickSearch", "MasterDesignation")" />
     @using (Html.BeginForm())
     {    
         <p>
-            Search for : @Html.TextBox("SearchString")
+            Search for : @*@Html.TextBox("SearchString")*@
+            <input type="text" name="SearchString" data-autocomplete-source="@Url.Action("QuickSearch", "MasterDesignation")" />
             <input type="submit" value="Filter" />
         </p> 
     }
