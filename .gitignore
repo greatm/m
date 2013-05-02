@@ -2,9 +2,11 @@
 #.\b\obj\*.*
 #./b/app_data/*.*
 
-bin/
+# bin/
 obj/
-app_data/
+# app_data/
+*.mdf
+*.ldf
 
 
 #b/bin/
